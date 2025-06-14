@@ -391,6 +391,14 @@ h1.intro, #typed-hero {
   transform: scale(0.95);
 }
 
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem auto;
+  flex-wrap: wrap; /* Para adaptar no celular */
+}
+
 /* ===== RODAPÉ ===== */
 footer {
   background-color: #1a1a1a;
