@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fotos</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">TFT</div>
+    <nav>
+      <ul class="nav-horizontal">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="historia.html">Histórias</a></li>
+        <li><a href="fotos.html">Fotos</a></li>
+        <li><a href="musicas.html">Músicas</a></li>
+        <li><a href="videos.html">Vídeos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 id="typed-hero" class="intro">Nossos Momentos em Slides</h1>
+
+    <div class="swiper swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="cini1.jpg" alt="Foto 1" onclick="openFull(this)" />
+        </div>
+        <div class="swiper-slide">
+          <img src="cini3.jpg" alt="Foto 2" onclick="openFull(this)" />
+        </div>
+        <div class="swiper-slide">
+          <img src="cini5.jpg" alt="Foto 3" onclick="openFull(this)" />
+        </div>
+        <div class="swiper-slide">
+          <img src="cini.jpg" alt="Foto 4" onclick="openFull(this)" />
+        </div>
+        <div class="swiper-slide">
+          <img src="cini2.jpg" alt="Foto 5" onclick="openFull(this)" />
+        </div>
+        <div class="swiper-slide">
+          <img src="cini4.jpg" alt="Foto 6" onclick="openFull(this)" />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </main>
+
+  <!-- MODAL PARA IMAGENS -->
+  <div id="imgModal" class="modal" onclick="closeFull()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg">
+  </div>
+
+<div id="imgModal" class="modal">
+  <span class="close" onclick="closeFull()">&times;</span>
+  <img class="modal-content" id="modalImg">
+</div>
+
+  
+  <footer>
+    <p>© TFT Enterprise - Todos os direitos reservados</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

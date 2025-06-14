@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sete Anos de Amor - Nini e Nino</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">TFT</div>
+    <nav>
+        <ul class="nav-horizontal">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="historia.html">Histórias</a></li>
+        <li><a href="fotos.html">Fotos</a></li>
+        <li><a href="musicas.html">Músicas</a></li>
+        <li><a href="videos.html">Vídeos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+  <!-- HERO FULLSCREEN COM VÍDEO DE FUNDO -->
+  <section class="hero">
+    <video class="hero-video" autoplay loop muted playsinline>
+      <source src="assets/videos/hero-video.mp4" type="video/mp4" />
+    </video>
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1 id="typed-hero">Sete Anos de Amor e Aventura</h1>
+      <p>Um site para recordar alguns de nossos momentos.</p>
+      <a href="historia.html" class="btn">Nossa História</a>
+    </div>
+  </section>
+
+  <!-- SEÇÃO DE INTRO -->
+  <section class="intro">
+    <div class="container">
+      <h2>7 anos de uma linda jornada</h2>
+      <p>Esse site é um presente para relembrar tudo que vivemos até aqui, cada momento especial, cada sorriso, cada conquista juntos. E também para colocarmos as próximas de muitas conquistas que vier, sempre salvando nossos momentos e recordações. Eu te amo!</p>
+    </div>
+  </section>
+
+  <!-- SEÇÃO DE CARDS COM VÍDEO -->
+  <section class="cards-section">
+    <div class="container">
+      <h2>Momentos Em Cartões</h2>
+
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/Kz-4pAPqH4c?si=C1V73FuLwROxWj_Q"
+          title="Vídeo especial"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <div class="cards-grid">
+        <div class="card fade-in-card">
+          <img src="ola.jpg" alt="Foto 1" onclick="openFull(this)" />
+          <div class="card-overlay">
+            <h3>Em Curitiba</h3>
+          </div>
+        </div>
+        <div class="card fade-in-card">
+          <img src="ola1.jpg" alt="Foto 2" onclick="openFull(this)" />
+          <div class="card-overlay">
+            <h3>Em Águas Claras</h3>
+          </div>
+        </div>
+        <div class="card fade-in-card">
+          <img src="ola2.jpg" alt="Foto 3" onclick="openFull(this)" />
+          <div class="card-overlay">
+            <h3>Na Praia</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL PARA IMAGENS -->
+  <div id="imgModal" class="modal" onclick="closeFull()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg">
+  </div>
+</main>
+  <!-- RODAPÉ -->
+  <footer>
+    <p>© TFT Enterprise – Todos os direitos reservados</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
