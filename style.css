@@ -394,10 +394,24 @@ h1.intro, #typed-hero {
 .btn-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 1rem;
   margin: 2rem auto;
-  flex-wrap: wrap; /* Para adaptar no celular */
+  flex-wrap: wrap; /* Para quebrar no celular */
+  max-width: 100%;  /* Garante que o container não estique além do necessário */
+  text-align: center; /* Garante alinhamento dentro */
 }
+
+.btn-container a {
+  display: inline-block; /* Garante tamanho correto */
+}
+
+.btn-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 
 /* ===== RODAPÉ ===== */
 footer {
