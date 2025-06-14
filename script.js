@@ -107,3 +107,16 @@ document.addEventListener("click", (e) => {
     modal.style.display = "none";
   }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const clickSound = document.getElementById("click-sound");
+  
+  document.querySelectorAll('a, button').forEach(el => {
+    el.addEventListener('click', () => {
+      if (clickSound) {
+        clickSound.currentTime = 0;
+        clickSound.play();
+      }
+    });
+  });
+});
