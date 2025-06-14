@@ -338,6 +338,19 @@ h1.intro, #typed-hero {
   }
 }
 
+.caixa-historia {
+  padding: 1.5rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  border: 3px solid #00ffe0;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #00ffe0, 0 0 30px #00ffe0;
+  background-color: rgba(13, 13, 13, 0.8);
+  color: #f0f0f0;
+  text-align: left;
+  line-height: 1.8;
+}
+
 /* ===== RODAPÉ ===== */
 footer {
   background-color: #1a1a1a;
