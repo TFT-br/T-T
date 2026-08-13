@@ -1,12 +1,17 @@
+```css
 /* ===== RESET ===== */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+
 /* Garante que o body sempre ocupe a altura total da tela */
-html, body {
+
+html,
+body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -21,7 +26,9 @@ main {
   flex: 1 0 auto;
 }
 
+
 /* ===== NAVBAR ===== */
+
 .navbar {
   padding: 1rem;
   background-color: rgba(26, 26, 26, 0.85);
@@ -56,15 +63,20 @@ main {
   margin-bottom: 0.5rem;
 }
 
-/* ===== TÍTULOS COM AZUL TIFFANY ===== */
-h1.intro, #typed-hero {
+
+/* ===== TÍTULOS ===== */
+
+h1.intro,
+#typed-hero {
   color: #00bfa6;
   font-size: 2rem;
   margin-bottom: 1rem;
   text-align: center;
 }
 
+
 /* ===== HERO ===== */
+
 .hero {
   position: relative;
   min-height: 100svh;
@@ -130,7 +142,116 @@ h1.intro, #typed-hero {
   background-color: #0fffe3;
 }
 
+
+/* ===================================================== */
+/* ===== CONTADOR DE AMOR ============================== */
+/* ===================================================== */
+
+.love-counter-section {
+  padding: 5rem 1rem;
+  text-align: center;
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(0, 191, 166, 0.08),
+      transparent 65%
+    );
+}
+
+.love-counter-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.love-counter-container h2 {
+  color: #00bfa6;
+  font-size: 2.5rem;
+  margin-bottom: 0.3rem;
+  text-shadow:
+    0 0 10px rgba(0, 255, 224, 0.5);
+}
+
+.love-counter-subtitle {
+  color: #d0d0d0;
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+}
+
+.love-counter {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.time-box {
+  min-width: 130px;
+  padding: 1.5rem 1rem;
+
+  background: rgba(13, 13, 13, 0.85);
+
+  border: 2px solid #00bfa6;
+  border-radius: 14px;
+
+  box-shadow:
+    0 0 10px rgba(0, 255, 224, 0.4),
+    inset 0 0 15px rgba(0, 255, 224, 0.04);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.time-box:hover {
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 0 15px #00ffe0,
+    0 0 30px rgba(0, 255, 224, 0.4);
+}
+
+.time-box span {
+  display: block;
+
+  color: #00ffe0;
+
+  font-size: 2.5rem;
+  font-weight: bold;
+
+  line-height: 1.1;
+
+  text-shadow:
+    0 0 8px rgba(0, 255, 224, 0.7);
+}
+
+.time-box small {
+  display: block;
+
+  margin-top: 0.5rem;
+
+  color: #f0f0f0;
+
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.love-counter-footer {
+  margin-top: 2rem;
+
+  color: #00bfa6;
+
+  font-size: 1.2rem;
+  font-weight: bold;
+
+  text-shadow:
+    0 0 8px rgba(0, 255, 224, 0.5);
+}
+
+
 /* ===== INTRO ===== */
+
 .intro {
   padding: 4rem 1rem;
   text-align: center;
@@ -154,8 +275,11 @@ h1.intro, #typed-hero {
   word-wrap: break-word;
 }
 
+
 /* ===== CARDS E GALERIA ===== */
-.cards-grid, .gallery {
+
+.cards-grid,
+.gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -179,15 +303,22 @@ h1.intro, #typed-hero {
   transform: scale(1.05);
 }
 
-/* ===== VIDEO EMBED COM MOLDURA NEON ===== */
+
+/* ===== VIDEO EMBED ===== */
+
 .video-wrapper {
   width: 100%;
   max-width: 800px;
   margin: 0 auto 40px;
   padding: 10px;
+
   border: 3px solid #00ffe0;
   border-radius: 12px;
-  box-shadow: 0 0 15px #00ffe0, 0 0 30px #00ffe0;
+
+  box-shadow:
+    0 0 15px #00ffe0,
+    0 0 30px #00ffe0;
+
   text-align: center;
 }
 
@@ -197,34 +328,49 @@ h1.intro, #typed-hero {
   border-radius: 10px;
 }
 
+
 /* ===== MODAL ===== */
+
 .modal {
   display: none;
+
   position: fixed;
+
   z-index: 9999;
+
   left: 0;
   top: 0;
+
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.95);
+
+  background-color: rgba(0, 0, 0, 0.95);
 }
 
 .modal-content {
   margin: auto;
+
   display: block;
+
   max-width: 90%;
   max-height: 80vh;
+
   border-radius: 10px;
+
   box-shadow: 0 0 20px #0abab5;
 }
 
 .close {
   position: absolute;
+
   top: 30px;
   right: 50px;
+
   color: white;
+
   font-size: 40px;
   font-weight: bold;
+
   cursor: pointer;
 }
 
@@ -235,7 +381,9 @@ h1.intro, #typed-hero {
   cursor: pointer;
 }
 
+
 /* ===== SWIPER ===== */
+
 .swiper-container {
   max-width: 400px;
   height: auto;
@@ -254,7 +402,9 @@ h1.intro, #typed-hero {
   height: auto;
   object-fit: contain;
   border-radius: 12px;
+
   box-shadow: 0 0 10px #0abab5;
+
   transition: transform 0.3s ease;
 }
 
@@ -262,16 +412,22 @@ h1.intro, #typed-hero {
   transform: scale(1.05);
 }
 
+
 /* ===== NAVBAR MOBILE ===== */
+
 .nav-horizontal {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+
   list-style: none;
+
   padding: 0;
   margin: 0;
+
   gap: 0.5rem;
+
   width: 100%;
 }
 
@@ -281,11 +437,17 @@ h1.intro, #typed-hero {
 
 .nav-horizontal li a {
   display: inline-block;
+
   padding: 0.5rem 1rem;
+
   text-decoration: none;
+
   color: #00bfa6;
+
   font-weight: bold;
+
   white-space: nowrap;
+
   border-radius: 4px;
 }
 
@@ -293,90 +455,80 @@ h1.intro, #typed-hero {
   color: #0fffe3;
 }
 
-@media (max-width: 768px) {
-  .navbar nav ul.nav-horizontal {
-    flex-direction: row !important;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
 
-  .hero-content h1 {
-    font-size: 1.6rem;
-    white-space: normal;
-  }
-
-  .hero-content p {
-    font-size: 1rem;
-  }
-
-  .gallery-item,
-  .card {
-    max-width: 90vw;
-  }
-
-  .video-wrapper iframe {
-    height: 250px;
-  }
-
-  .modal-content {
-    max-width: 95%;
-    max-height: 70vh;
-  }
-
-  .close {
-    top: 20px;
-    right: 20px;
-    font-size: 32px;
-  }
-
-  .swiper-container {
-    max-width: 90vw;
-  }
-
-  .swiper-slide img {
-    max-height: 300px;
-  }
-}
+/* ===== CAIXA HISTÓRIA ===== */
 
 .caixa-historia {
   padding: 1.5rem;
+
   margin: 2rem auto;
+
   max-width: 900px;
+
   border: 3px solid #00ffe0;
   border-radius: 12px;
-  box-shadow: 0 0 15px #00ffe0, 0 0 30px #00ffe0;
+
+  box-shadow:
+    0 0 15px #00ffe0,
+    0 0 30px #00ffe0;
+
   background-color: rgba(13, 13, 13, 0.8);
+
   color: #f0f0f0;
+
   text-align: left;
+
   line-height: 1.8;
 }
 
+
 /* ===== BOTÕES ANIMADOS ===== */
+
 .btn {
   display: inline-block;
+
   padding: 0.75rem 1.5rem;
+
   background-color: #00bfa6;
+
   color: #0d0d0d;
+
   font-weight: bold;
+
   border-radius: 6px;
+
   text-decoration: none;
+
   cursor: pointer;
+
   position: relative;
+
   overflow: hidden;
-  transition: background-color 0.3s, transform 0.2s ease;
-  max-width: 200px; /* Controla tamanho máximo do botão */
+
+  transition:
+    background-color 0.3s,
+    transform 0.2s ease;
+
+  max-width: 200px;
+
   text-align: center;
 }
 
 .btn::after {
   content: '';
+
   position: absolute;
+
   top: 0;
   left: -100%;
+
   width: 100%;
   height: 100%;
+
   background: rgba(255, 255, 255, 0.3);
+
   transform: skewX(-20deg);
+
   transition: left 0.5s;
 }
 
@@ -395,52 +547,193 @@ h1.intro, #typed-hero {
 
 .btn-container {
   display: flex;
+
   justify-content: center;
   align-items: center;
+
   gap: 1rem;
+
   margin: 2rem auto;
-  flex-wrap: wrap; /* Para quebrar no celular */
-  max-width: 100%;  /* Garante que o container não estique além do necessário */
-  text-align: center; /* Garante alinhamento dentro */
+
+  flex-wrap: wrap;
+
+  max-width: 100%;
+
+  text-align: center;
 }
 
 .btn-container a {
-  display: inline-block; /* Garante tamanho correto */
+  display: inline-block;
 }
 
 .btn-wrapper {
   width: 100%;
+
   display: flex;
+
   justify-content: center;
 }
 
 
 /* ===== RODAPÉ ===== */
+
 footer {
   background-color: #1a1a1a;
+
   color: #00bfa6;
+
   text-align: center;
+
   padding: 1rem 0;
+
   font-size: 0.9rem;
+
   width: 100%;
+
   margin-top: auto;
+
   position: relative;
 }
 
-@media (max-width: 768px) {
-  footer {
-    font-size: 0.8rem;
-    padding: 1rem 0;
-    margin-top: 2rem;
-  }
-}
-
-/* Garante que o rodapé NUNCA herde estilos de botão */
 footer p {
   all: unset;
+
   color: #00bfa6;
+
   text-align: center;
+
   font-size: 0.9rem;
+
   display: block;
+
   padding: 1rem 0;
 }
+
+
+/* ===================================================== */
+/* ===== RESPONSIVIDADE ================================= */
+/* ===================================================== */
+
+@media (max-width: 768px) {
+
+  .navbar nav ul.nav-horizontal {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+
+  .hero-content h1 {
+    font-size: 1.6rem;
+    white-space: normal;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+
+  .gallery-item,
+  .card {
+    max-width: 90vw;
+  }
+
+
+  .video-wrapper iframe {
+    height: 250px;
+  }
+
+
+  .modal-content {
+    max-width: 95%;
+    max-height: 70vh;
+  }
+
+
+  .close {
+    top: 20px;
+    right: 20px;
+    font-size: 32px;
+  }
+
+
+  .swiper-container {
+    max-width: 90vw;
+  }
+
+
+  .swiper-slide img {
+    max-height: 300px;
+  }
+
+
+  /* CONTADOR NO CELULAR */
+
+  .love-counter-section {
+    padding: 3rem 1rem;
+  }
+
+  .love-counter-container h2 {
+    font-size: 2rem;
+  }
+
+  .love-counter-subtitle {
+    font-size: 1rem;
+  }
+
+  .love-counter {
+    gap: 10px;
+  }
+
+  .time-box {
+    min-width: 105px;
+
+    padding: 1rem 0.5rem;
+  }
+
+  .time-box span {
+    font-size: 2rem;
+  }
+
+  .time-box small {
+    font-size: 0.75rem;
+  }
+
+  .love-counter-footer {
+    font-size: 1rem;
+  }
+
+}
+
+
+@media (max-width: 400px) {
+
+  .time-box {
+    min-width: 90px;
+  }
+
+  .time-box span {
+    font-size: 1.7rem;
+  }
+
+  .time-box small {
+    font-size: 0.65rem;
+  }
+
+}
+
+
+/* ===== FOOTER MOBILE ===== */
+
+@media (max-width: 768px) {
+
+  footer {
+    font-size: 0.8rem;
+
+    padding: 1rem 0;
+
+    margin-top: 2rem;
+  }
+
+}
+```
